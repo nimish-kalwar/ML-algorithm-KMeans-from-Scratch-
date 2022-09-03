@@ -10,7 +10,7 @@ Cluster a data set into k different clusters. The data set is unlabeled (unsuper
 
 2. Repeat until converged:
 
-Update cluster labels: Assign points to the nearest cluster center (centroid)
+• Update cluster labels: Assign points to the nearest cluster center (centroid)
 
 • Update cluster centers (centroids): Set center to the mean of each cluster
 
@@ -18,7 +18,13 @@ Update cluster labels: Assign points to the nearest cluster center (centroid)
 
 Get the distance between two feature vectors
 
-In the Euclidean plane, let point {\displaystyle p}p have Cartesian coordinates {\displaystyle (p_{1},p_{2})}(p_{1},p_{2}) and let point {\displaystyle q}q have coordinates {\displaystyle (q_{1},q_{2})}(q_{1},q_{2}). Then the distance between {\displaystyle p}p and {\displaystyle q}q is given by:[2]
+d =√[(x2 – x1)2 + (y2 – y1)2]
 
-{\displaystyle d(p,q)={\sqrt {(q_{1}-p_{1})^{2}+(q_{2}-p_{2})^{2}}}.}{\displaystyle d(p,q)={\sqrt {(q_{1}-p_{1})^{2}+(q_{2}-p_{2})^{2}}}.}
+Where,
+
+“d” is the Euclidean distance
+
+(x1, y1) is the coordinate of the first point
+
+(x2, y2) is the coordinate of the second point.
 
