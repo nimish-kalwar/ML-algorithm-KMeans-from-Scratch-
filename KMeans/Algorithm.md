@@ -18,7 +18,7 @@ Cluster a data set into k different clusters. The data set is unlabeled (unsuper
 
 Get the distance between two feature vectors
 
-d(p,q) =√Σ(q - p)^2]
+d(p,q) =√Σ(q - p)^2
 
 Where,
 
