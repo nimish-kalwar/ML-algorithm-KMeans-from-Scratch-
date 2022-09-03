@@ -18,13 +18,11 @@ Cluster a data set into k different clusters. The data set is unlabeled (unsuper
 
 Get the distance between two feature vectors
 
-d =√[(x2 – x1)2 + (y2 – y1)2]
+d(p,q) =√Σ(q - p)^2]
 
 Where,
 
 “d” is the Euclidean distance
 
-(x1, y1) is the coordinate of the first point
-
-(x2, y2) is the coordinate of the second point.
+p, q are two euclidean vectors
 
