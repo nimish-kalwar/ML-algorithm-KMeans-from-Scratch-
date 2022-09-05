@@ -1,9 +1,10 @@
-# ML-algorithm-KMeans-from-Scratch-
-KMeans Machine Learning algorithm implementation from scratch.
+# ML-algorithms-from-Scratch-
+Machine Learning algorithms implementations from scratch.
 
 ## Algorithm Implemented
 
 - K-Means
+- KNN
 
 ## Installation and usage.
 
