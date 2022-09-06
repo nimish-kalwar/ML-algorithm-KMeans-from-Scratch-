@@ -16,7 +16,8 @@ The hypothetical function used for prediction is represented by h( x ).
   ### sigmoid( z ) = 1 / ( 1 + e( - z ) )
   
   The cost function for Logistic Regression is represented by J.
-  J = - ylog( h(x) ) - ( 1 - y )log( 1 - h(x) )
+  
+  ### J = - ylog( h(x) ) - ( 1 - y )log( 1 - h(x) )
 
   here, y is the real target value
   
@@ -47,4 +48,5 @@ repeat until convergence  {
        tmpi = wi - alpha * dwi          
        wi = tmpi              
 }
+
 where alpha is the learning rate.
