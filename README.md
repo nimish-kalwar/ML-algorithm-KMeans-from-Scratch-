@@ -5,6 +5,8 @@ Machine Learning algorithms implementations from scratch.
 
 - K-Means
 - KNN
+- Linear Regression
+- Logistic Regression
 
 ## Installation and usage.
 
