@@ -2,21 +2,36 @@
 
 ## Goal
 
-Depicts the relationship between the dependent variable y and the independent variables xi  ( or features ).  
+Depicts the relationship between the dependent variable y(categorical) and the independent variables xi  ( or features ).  
 The hypothetical function used for prediction is represented by h( x ).
 
 ## Iterative optimization
 
-  h( x ) = w * x + b  
-    
-  here, b is the bias.
-  x represents the feature vector
-  w represents the weight vector.
+  h( x ) = sigmoid( wx + b )
+
+  Here, w is the weight vector.
+  x is the feature vector. 
+  b is the bias.
+
+  ### sigmoid( z ) = 1 / ( 1 + e( - z ) )
   
-  The cost function (or loss function) is used to measure the performance of a machine learning model or quantifies the error between the expected values 
-  and the values predicted by our hypothetical function. The cost function for Linear Regression is represented by J.
+  The cost function for Logistic Regression is represented by J.
+  J = - ylog( h(x) ) - ( 1 - y )log( 1 - h(x) )
+
+  here, y is the real target value
   
-  So, our objective is to minimize the cost function J (or improve the performance of our machine learning model). 
+  h( x ) = sigmoid( wx + b )
+
+  For y = 0,
+
+  J = - log( 1 - h(x) )
+
+  and y = 1,
+
+  J = - log( h(x) )
+  
+  This cost function is we train, we need to maximize the probability by minimizing the loss function
+  
   To do this, we have to find the weights at which J is minimum.  One such algorithm which can be used to minimize any differentiable function is Gradient Descent. 
   It is a first-order iterative optimizing algorithm that takes us to a minimum of a function.
   
