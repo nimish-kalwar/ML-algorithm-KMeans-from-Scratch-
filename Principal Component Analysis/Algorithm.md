@@ -16,16 +16,15 @@ Find a transformation such that
   Step 1: Subtract the mean from X.
   
   Step 2: Calculate Cov(X, X)
+  * The covariance matrix is a square matrix denoting the covariance of the elements with each other. The covariance of an element with itself is nothing but just its     Variance.
   
   Step 3: Calculate eignevectors and eigenvalues in decreasing order
+   * A Higher Eigenvalue corresponds to a higher variability. Hence the principal axis with the higher Eigenvalue will be an axis capturing higher variability in the       data.
   
   Step 4: Choose first k eigenvectors and that will be the new k dimensions
-  
-  Step 5: Transform the n dimensional data points into k dimensions (= Projections with dot product)
-
-  * The covariance matrix is a square matrix denoting the covariance of the elements with each other. The covariance of an element with itself is nothing but just its     Variance.
-  * A Higher Eigenvalue corresponds to a higher variability. Hence the principal axis with the higher Eigenvalue will be an axis capturing higher variability in the       data.
   * Each column in the Eigen vector-matrix corresponds to a principal component, so arranging them in descending order of their Eigenvalue will automatically arrange       the principal component in descending order of their variability.
+ 
+  Step 5: Transform the n dimensional data points into k dimensions (= Projections with dot product)
 
 
   ### Variance
