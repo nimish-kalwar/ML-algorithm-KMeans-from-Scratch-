@@ -7,6 +7,7 @@ Machine Learning algorithms implementations from scratch.
 - KNN
 - Linear Regression
 - Logistic Regression
+- Principal Component Analysis
 
 ## Installation and usage.
 
