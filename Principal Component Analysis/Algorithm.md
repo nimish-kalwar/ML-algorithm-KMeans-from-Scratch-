@@ -23,6 +23,10 @@ Find a transformation such that
   
   Step 5: Transform the n dimensional data points into k dimensions (= Projections with dot product)
 
+  * The covariance matrix is a square matrix denoting the covariance of the elements with each other. The covariance of an element with itself is nothing but just its     Variance.
+  * A Higher Eigenvalue corresponds to a higher variability. Hence the principal axis with the higher Eigenvalue will be an axis capturing higher variability in the       data.
+  * Each column in the Eigen vector-matrix corresponds to a principal component, so arranging them in descending order of their Eigenvalue will automatically arrange       the principal component in descending order of their variability.
+
 
   ### Variance
   
