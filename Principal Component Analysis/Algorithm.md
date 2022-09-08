@@ -14,10 +14,14 @@ Find a transformation such that
 ## Steps to Implement PCA.
 
   Step 1: Subtract the mean from X.
+  
   Step 2: Calculate Cov(X, X)
+  
   Step 3: Calculate eignevectors and eigenvalues in decreasing order
+  
   Step 4: Choose first k eigenvectors and that will be the new k dimensions
-  Step 5: Transform the n dimensional data points into k dimensions                     (= Projections with dot product)
+  
+  Step 5: Transform the n dimensional data points into k dimensions (= Projections with dot product)
 
 
   ### Variance
