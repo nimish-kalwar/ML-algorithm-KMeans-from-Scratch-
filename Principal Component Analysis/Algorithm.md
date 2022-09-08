@@ -20,10 +20,10 @@ Find a transformation such that
   
   Step 3: Calculate eignevectors and eigenvalues in decreasing order
    * A Higher Eigenvalue corresponds to a higher variability. Hence the principal axis with the higher Eigenvalue will be an axis capturing higher variability in the       data.
+   * Each column in the Eigen vector-matrix corresponds to a principal component, so arranging them in descending order of their Eigenvalue will automatically arrange      the principal component in descending order of their variability.
   
   Step 4: Choose first k eigenvectors and that will be the new k dimensions
-  * Each column in the Eigen vector-matrix corresponds to a principal component, so arranging them in descending order of their Eigenvalue will automatically arrange       the principal component in descending order of their variability.
- 
+  
   Step 5: Transform the n dimensional data points into k dimensions (= Projections with dot product)
 
 
