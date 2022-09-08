@@ -2,51 +2,30 @@
 
 ## Goal
 
-Depicts the relationship between the dependent variable y(categorical) and the independent variables xi  ( or features ).  
-The hypothetical function used for prediction is represented by h( x ).
+PCA finds a new set of dimensions such that all the dimesions are orthogonal (and hence linearly independent) and ranked according to the variance of data along them.
 
-## Iterative optimization
+Find a transformation such that
 
-  h( x ) = sigmoid( wx + b )
+* The transformed features are linearly independent
+* Dimensionality can be reduced by taking only the dimensions with the highest   importance
+* Those newly found dimensions should minimize the projection error
+* The Projected points should have maximum spred, i.e. maximum variance
 
-  Here, w is the weight vector.
-  x is the feature vector. 
-  b is the bias.
+## Steps to Implement PCA.
 
-  ### sigmoid( z ) = 1 / ( 1 + e( - z ) )
+  Step 1: Subtract the mean from X.
+  Step 2: Calculate Cov(X, X)
+  Step 3: Calculate eignevectors and eigenvalues in decreasing order
+  Step 4: Choose first k eigenvectors and that will be the new k dimensions
+  Step 5: Transform the n dimensional data points into k dimensions                     (= Projections with dot product)
+
+
+  ### Variance
   
-  The cost function for Logistic Regression is represented by J.
+  How much variation or spread the data has.
   
-  ### J = - ylog( h(x) ) - ( 1 - y )log( 1 - h(x) )
-
-  here, y is the real target value
+  Var(X) = 1/n*sigma(Xi - Xm)^2
   
-  h( x ) = sigmoid( wx + b )
-
-  For y = 0,
-
-  J = - log( 1 - h(x) )
-
-  and y = 1,
-
-  J = - log( h(x) )
-  
-  This cost function is we train, we need to maximize the probability by minimizing the loss function
-  
-  To do this, we have to find the weights at which J is minimum.  One such algorithm which can be used to minimize any differentiable function is Gradient Descent. 
-  It is a first-order iterative optimizing algorithm that takes us to a minimum of a function.
-  
-  
-## Gradient descent
-
-1: Start with some w
-
-2: Keep changing w to reduce J( w ) until we hopefully end up at a minimum.
-
-Algorithm: 
-repeat until convergence  {
-       tmpi = wi - alpha * dwi          
-       wi = tmpi              
-}
-
-where alpha is the learning rate.
+  where Xi is the data point,
+        Xm is the mean of dataset
+        n total number of samples
