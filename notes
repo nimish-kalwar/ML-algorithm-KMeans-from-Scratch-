@@ -1,0 +1,3 @@
+Precision = out of our total positive predictions how many we correctly predicted. TP/(TP+FP)
+
+Recall = out of total actual postives how many we correctly predicted. TP/(TP+FN).
