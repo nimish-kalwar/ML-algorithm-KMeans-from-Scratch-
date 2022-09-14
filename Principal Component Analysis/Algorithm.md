@@ -34,5 +34,7 @@ Find a transformation such that
   Var(X) = 1/n*sigma(Xi - Xm)^2
   
   where Xi is the data point,
-        Xm is the mean of dataset
+  
+        Xm is the mean of dataset,
+        
         n total number of samples
