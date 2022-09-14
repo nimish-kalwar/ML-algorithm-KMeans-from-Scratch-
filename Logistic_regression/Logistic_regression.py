@@ -18,7 +18,7 @@ class Logistic_Regression:
         self.bias = 0
         l=[]
         
-        # gradient descent
+        # Batch gradient descent
         for _ in range(self.n_iters):
             # approximate y with linear combination of weights and x, plus bias
             linear_model = np.dot(X, self.weight) + self.bias
