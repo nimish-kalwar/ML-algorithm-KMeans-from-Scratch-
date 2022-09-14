@@ -35,6 +35,6 @@ Find a transformation such that
   
   where Xi is the data point,
   
-        Xm is the mean of dataset,
+Xm is the mean of dataset,
         
-        n total number of samples
+n total number of samples
