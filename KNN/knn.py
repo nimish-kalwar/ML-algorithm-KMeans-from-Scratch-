@@ -30,7 +30,7 @@ class KNN:
         # Extract the labels of the K nearest training samples
         k_neighbor_labels = [self.y_train[i] for i in k_idx]
         
-        # eturn the most common class label
+        # return the most common class label
         most_common_label = Counter(k_neighbor_labels).most_common(1) # most_common_label will be a tuple which having most common label with its frequency
         return most_common_label[0][0]
     
