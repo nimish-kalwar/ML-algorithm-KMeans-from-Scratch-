@@ -9,7 +9,7 @@ Find a transformation such that
 * The transformed features are linearly independent
 * Dimensionality can be reduced by taking only the dimensions with the highest   importance
 * Those newly found dimensions should minimize the projection error
-* The Projected points should have maximum spred, i.e. maximum variance
+* The Projected points should have maximum spread, i.e. maximum variance
 
 ## Steps to Implement PCA.
 
