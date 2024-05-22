@@ -1,40 +1,16 @@
-# ML-algorithms-from-Scratch-
-Machine Learning algorithms implementations from scratch.
-
-## Algorithm Implemented
-
-- K-Means
-- KNN
-- Linear Regression
-- Logistic Regression
-- Principal Component Analysis
+# Blog Django app-
+Blogging site for users, which help to create, edit and delete own blogs and to see other users blogs.
 
 ## Installation and usage.
 
-This project has 2 dependencies.
+- pip install django
+- pip install django-allauth
+- pip install django-otp
 
-- `numpy` for the maths implementation and writing the algorithms
-- `Scikit-learn` for the data generation and testing.
-- `Matplotlib` for the plotting.
-- `Pandas` for loading data.
-
-**NOTE**: Do note that, Only `numpy` is used for the implementations. Others
-help in the testing of code, and making it easy for us, instead of writing that
-too from scratch.
-
-You can install these using the command below!
-
-```sh
-# Linux or MacOS
-pip3 install -r requirements.txt
-
-# Windows
-pip install -r requirements.txt
-```
 
 ## Contact
 If you loved what you read here and feel like we can collaborate to produce some exciting stuff, or if you
 just want to shoot a question, please feel free to connect with me on 
-<a href="mailto:nimish786.kalwar@gmail.com">email</a> or 
-<a href="https://www.linkedin.com/in/nimish-kalwar/" target="_blank">LinkedIn</a>
+<a href="mailto:ashihkalwar03@gmail.com">email</a> or 
+<a href="https://www.linkedin.com/in/ashish-kalwar/" target="_blank">LinkedIn</a>
 
